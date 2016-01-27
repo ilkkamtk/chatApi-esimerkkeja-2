@@ -22,6 +22,7 @@ $(function () {
                 console.log(resp);
                 $('input[name=uID]').val(resp.uID);
                 $('#profiili h4').text(resp.name);
+                $('#profiili img').attr('src', resp.profileImage);
                 showMessages();
             }
         };
